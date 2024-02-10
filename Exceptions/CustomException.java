@@ -1,4 +1,10 @@
-public class GenerateException{
+class MyException extends Exception{
+    MyException(String a){
+        super(a);
+    }
+}
+
+public class CustomException{
     public static void main(String a[]){
         int i = 0;
         int j = 0;
@@ -7,7 +13,7 @@ public class GenerateException{
         try{
             if(j == 0){
                 // throw new exception
-                throw new ArithmeticException("Dont do that again!!");
+                throw new MyException("Dont do that again!!");
             }
 
             System.out.println("Dividing...");
@@ -15,9 +21,10 @@ public class GenerateException{
             
             System.out.println("Result : " + result);
         }
-        catch(ArithmeticException e){
+        catch(MyException e){
             System.out.println("Cant Divid by Zero ::: " + e);
         }
+        
         System.out.println();
         System.out.println("Good Bye!!");
     }
