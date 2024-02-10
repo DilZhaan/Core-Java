@@ -1,4 +1,4 @@
-public class A implements InterfaceA,InterfaceB
+public class A implements InterfaceB
 {
     public void show()
     {
