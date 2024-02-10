@@ -1,3 +1,4 @@
+//create my custom exception
 class MyException extends Exception{
     MyException(String a){
         super(a);
@@ -24,7 +25,7 @@ public class CustomException{
         catch(MyException e){
             System.out.println("Cant Divid by Zero ::: " + e);
         }
-        
+
         System.out.println();
         System.out.println("Good Bye!!");
     }
